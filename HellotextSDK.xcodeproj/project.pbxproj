@@ -21,35 +21,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F59B5F02CE289B90030DFF4 /* HellotextSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellotextSDK.h; sourceTree = "<group>"; };
+		0F59B5F12CE289B90030DFF4 /* HellotextSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = HellotextSDK.docc; sourceTree = "<group>"; };
+		0F59B5F32CE289B90030DFF4 /* HellotextSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellotextSDKTests.swift; sourceTree = "<group>"; };
 		0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotextSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0FFAB8062CDFAC1C00AD77A6 /* Exceptions for "HellotextSDK" folder in "HellotextSDK" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				HellotextSDK.h,
-			);
-			target = 0FFAB7F32CDFAC1B00AD77A6 /* HellotextSDK */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0FFAB7F62CDFAC1B00AD77A6 /* HellotextSDK */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0FFAB8062CDFAC1C00AD77A6 /* Exceptions for "HellotextSDK" folder in "HellotextSDK" target */,
-			);
-			path = HellotextSDK;
-			sourceTree = "<group>";
-		};
-		0FFAB8022CDFAC1C00AD77A6 /* HellotextSDKTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HellotextSDKTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0FFAB7F12CDFAC1B00AD77A6 /* Frameworks */ = {
@@ -70,11 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F59B5F22CE289B90030DFF4 /* HellotextSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0F59B5F02CE289B90030DFF4 /* HellotextSDK.h */,
+				0F59B5F12CE289B90030DFF4 /* HellotextSDK.docc */,
+			);
+			path = HellotextSDK;
+			sourceTree = "<group>";
+		};
+		0F59B5F42CE289B90030DFF4 /* HellotextSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F59B5F32CE289B90030DFF4 /* HellotextSDKTests.swift */,
+			);
+			path = HellotextSDKTests;
+			sourceTree = "<group>";
+		};
 		0FFAB7EA2CDFAC1B00AD77A6 = {
 			isa = PBXGroup;
 			children = (
-				0FFAB7F62CDFAC1B00AD77A6 /* HellotextSDK */,
-				0FFAB8022CDFAC1C00AD77A6 /* HellotextSDKTests */,
+				0F59B5F22CE289B90030DFF4 /* HellotextSDK */,
+				0F59B5F42CE289B90030DFF4 /* HellotextSDKTests */,
 				0FFAB7F52CDFAC1B00AD77A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,9 +108,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				0FFAB7F62CDFAC1B00AD77A6 /* HellotextSDK */,
-			);
 			name = HellotextSDK;
 			packageProductDependencies = (
 			);
@@ -136,9 +127,6 @@
 			);
 			dependencies = (
 				0FFAB8012CDFAC1C00AD77A6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0FFAB8022CDFAC1C00AD77A6 /* HellotextSDKTests */,
 			);
 			name = HellotextSDKTests;
 			packageProductDependencies = (
