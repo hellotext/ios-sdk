@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FFAB7FF2CDFAC1C00AD77A6 /* HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; };
+		26735978D3249E007AA88BA9 /* Pods_HellotextSDK_HellotextSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */; };
+		92AC3432A7296CD2B1FB55D7 /* Pods_HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740060D555D402049D977B99 /* Pods_HellotextSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,12 @@
 		0F59B5F32CE289B90030DFF4 /* HellotextSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellotextSDKTests.swift; sourceTree = "<group>"; };
 		0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotextSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK/Pods-HellotextSDK.release.xcconfig"; sourceTree = "<group>"; };
+		4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSDKTests.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSDKTests/Pods-HellotextSDK-HellotextSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HellotextSDK_HellotextSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSDKTests/Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		740060D555D402049D977B99 /* Pods_HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C320300513D3F04559070699 /* Pods-HellotextSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK.debug.xcconfig"; path = "Target Support Files/Pods-HellotextSDK/Pods-HellotextSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AC3432A7296CD2B1FB55D7 /* Pods_HellotextSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFAB7FF2CDFAC1C00AD77A6 /* HellotextSDK.framework in Frameworks */,
+				26735978D3249E007AA88BA9 /* Pods_HellotextSDK_HellotextSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +80,8 @@
 				0F59B5F22CE289B90030DFF4 /* HellotextSDK */,
 				0F59B5F42CE289B90030DFF4 /* HellotextSDKTests */,
 				0FFAB7F52CDFAC1B00AD77A6 /* Products */,
+				722D7CF546E46F25B63D9B17 /* Pods */,
+				984EDBA89501BD01AAFBB278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +92,27 @@
 				0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		722D7CF546E46F25B63D9B17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C320300513D3F04559070699 /* Pods-HellotextSDK.debug.xcconfig */,
+				412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */,
+				600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */,
+				4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		984EDBA89501BD01AAFBB278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740060D555D402049D977B99 /* Pods_HellotextSDK.framework */,
+				4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FFAB8072CDFAC1C00AD77A6 /* Build configuration list for PBXNativeTarget "HellotextSDK" */;
 			buildPhases = (
+				A9204A1D9B095A46939D914B /* [CP] Check Pods Manifest.lock */,
 				0FFAB7EF2CDFAC1B00AD77A6 /* Headers */,
 				0FFAB7F02CDFAC1B00AD77A6 /* Sources */,
 				0FFAB7F12CDFAC1B00AD77A6 /* Frameworks */,
@@ -109,8 +143,6 @@
 			dependencies = (
 			);
 			name = HellotextSDK;
-			packageProductDependencies = (
-			);
 			productName = HellotextSDK;
 			productReference = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */;
 			productType = "com.apple.product-type.framework";
@@ -119,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FFAB80C2CDFAC1C00AD77A6 /* Build configuration list for PBXNativeTarget "HellotextSDKTests" */;
 			buildPhases = (
+				C9398F365247B9A141CD60AA /* [CP] Check Pods Manifest.lock */,
 				0FFAB7FA2CDFAC1B00AD77A6 /* Sources */,
 				0FFAB7FB2CDFAC1B00AD77A6 /* Frameworks */,
 				0FFAB7FC2CDFAC1B00AD77A6 /* Resources */,
@@ -129,8 +162,6 @@
 				0FFAB8012CDFAC1C00AD77A6 /* PBXTargetDependency */,
 			);
 			name = HellotextSDKTests;
-			packageProductDependencies = (
-			);
 			productName = HellotextSDKTests;
 			productReference = 0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -162,7 +193,6 @@
 			);
 			mainGroup = 0FFAB7EA2CDFAC1B00AD77A6;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 0FFAB7F52CDFAC1B00AD77A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,6 +219,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9204A1D9B095A46939D914B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HellotextSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9398F365247B9A141CD60AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HellotextSDK-HellotextSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FFAB7F02CDFAC1B00AD77A6 /* Sources */ = {
@@ -218,6 +295,7 @@
 /* Begin XCBuildConfiguration section */
 		0FFAB8082CDFAC1C00AD77A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C320300513D3F04559070699 /* Pods-HellotextSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -251,6 +329,7 @@
 		};
 		0FFAB8092CDFAC1C00AD77A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -409,6 +488,7 @@
 		};
 		0FFAB80D2CDFAC1C00AD77A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -425,6 +505,7 @@
 		};
 		0FFAB80E2CDFAC1C00AD77A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
