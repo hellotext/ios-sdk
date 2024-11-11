@@ -15,6 +15,7 @@
 		0F59B66E2CE28B820030DFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6652CE28B820030DFF4 /* Main.storyboard */; };
 		0FFAB7FF2CDFAC1C00AD77A6 /* HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; };
 		26735978D3249E007AA88BA9 /* Pods_HellotextSDK_HellotextSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */; };
+		7527E5BCF534DF869BAD8D7F /* Pods_HellotextSDK_HellotextSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24F3194122452F6A8FA6BB /* Pods_HellotextSDK_HellotextSampleApp.framework */; };
 		92AC3432A7296CD2B1FB55D7 /* Pods_HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740060D555D402049D977B99 /* Pods_HellotextSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +41,13 @@
 		0F59B6642CE28B820030DFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F59B6662CE28B820030DFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0F59B6672CE28B820030DFF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F59B6702CE28D070030DFF4 /* HellotextSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HellotextSDK.podspec; sourceTree = "<group>"; };
 		0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotextSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1354506DA4326AC664979739 /* Pods-HellotextSDK-HellotextSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSampleApp.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSampleApp/Pods-HellotextSDK-HellotextSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		1F24F3194122452F6A8FA6BB /* Pods_HellotextSDK_HellotextSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HellotextSDK_HellotextSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK/Pods-HellotextSDK.release.xcconfig"; sourceTree = "<group>"; };
+		44CE238044082AAEC30253DB /* Pods-HellotextSDK-HellotextSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSampleApp/Pods-HellotextSDK-HellotextSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSDKTests.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSDKTests/Pods-HellotextSDK-HellotextSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HellotextSDK_HellotextSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSDKTests/Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7527E5BCF534DF869BAD8D7F /* Pods_HellotextSDK_HellotextSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +118,7 @@
 		0FFAB7EA2CDFAC1B00AD77A6 = {
 			isa = PBXGroup;
 			children = (
+				0F59B6702CE28D070030DFF4 /* HellotextSDK.podspec */,
 				0F59B6682CE28B820030DFF4 /* HellotextSampleApp */,
 				0F59B5F22CE289B90030DFF4 /* HellotextSDK */,
 				0F59B5F42CE289B90030DFF4 /* HellotextSDKTests */,
@@ -138,6 +145,8 @@
 				412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */,
 				600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */,
 				4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */,
+				44CE238044082AAEC30253DB /* Pods-HellotextSDK-HellotextSampleApp.debug.xcconfig */,
+				1354506DA4326AC664979739 /* Pods-HellotextSDK-HellotextSampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			children = (
 				740060D555D402049D977B99 /* Pods_HellotextSDK.framework */,
 				4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */,
+				1F24F3194122452F6A8FA6BB /* Pods_HellotextSDK_HellotextSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F59B65C2CE28B690030DFF4 /* Build configuration list for PBXNativeTarget "HellotextSampleApp" */;
 			buildPhases = (
+				85728384A5E2A4472D25DF7B /* [CP] Check Pods Manifest.lock */,
 				0F59B62A2CE28B680030DFF4 /* Sources */,
 				0F59B62B2CE28B680030DFF4 /* Frameworks */,
 				0F59B62C2CE28B680030DFF4 /* Resources */,
@@ -177,8 +188,6 @@
 			dependencies = (
 			);
 			name = HellotextSampleApp;
-			packageProductDependencies = (
-			);
 			productName = HellotextSampleApp;
 			productReference = 0F59B62E2CE28B680030DFF4 /* HellotextSampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +300,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		85728384A5E2A4472D25DF7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HellotextSDK-HellotextSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A9204A1D9B095A46939D914B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +425,7 @@
 /* Begin XCBuildConfiguration section */
 		0F59B6552CE28B690030DFF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CE238044082AAEC30253DB /* Pods-HellotextSDK-HellotextSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +454,7 @@
 		};
 		0F59B6562CE28B690030DFF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1354506DA4326AC664979739 /* Pods-HellotextSDK-HellotextSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

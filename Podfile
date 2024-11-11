@@ -11,4 +11,8 @@ target 'HellotextSDK' do
     # Pods for testing
   end
 
+  target 'HellotextSampleApp' do
+    pod 'HellotextSDK', :path => './'
+  end
+
 end
