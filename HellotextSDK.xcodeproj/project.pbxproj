@@ -41,7 +41,7 @@
 		0F59B6642CE28B820030DFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F59B6662CE28B820030DFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0F59B6672CE28B820030DFF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F59B6702CE28D070030DFF4 /* HellotextSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HellotextSDK.podspec; sourceTree = "<group>"; };
+		0F59B6702CE28D070030DFF4 /* HellotextSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HellotextSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotextSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1354506DA4326AC664979739 /* Pods-HellotextSDK-HellotextSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK-HellotextSampleApp.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK-HellotextSampleApp/Pods-HellotextSDK-HellotextSampleApp.release.xcconfig"; sourceTree = "<group>"; };

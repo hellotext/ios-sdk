@@ -13,6 +13,10 @@ public class HelloTextSDK {
     private init() {}
 
     public func initialize() {
-        // Initialization code here
+        printf("HelloTextSDK initialized")
+    }
+
+    public func teste() {
+        printf("HelloTextSDK teste")
     }
 }

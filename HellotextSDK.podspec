@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary      = 'A short description of HelloTextSDK.'
     s.homepage     = 'https://github.com/hellotext/ios-sdk'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
-    s.authors      = { 'Your Name' => 'your.email@example.com' }
+    s.authors      = { 'Breno Alves de Morais' => 'breno@iamviva.com' }
     s.source       = { :git => 'https://github.com/hellotext/ios-sdk.git', :tag => s.version.to_s }
     s.ios.deployment_target = '11.0'
     s.source_files  = 'Sources/**/*.{h,m,swift}'
