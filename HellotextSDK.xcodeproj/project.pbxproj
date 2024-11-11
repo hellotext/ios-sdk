@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F59B6692CE28B820030DFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B6672CE28B820030DFF4 /* ViewController.swift */; };
+		0F59B66A2CE28B820030DFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B6662CE28B820030DFF4 /* SceneDelegate.swift */; };
+		0F59B66B2CE28B820030DFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59B65F2CE28B820030DFF4 /* AppDelegate.swift */; };
+		0F59B66C2CE28B820030DFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6632CE28B820030DFF4 /* LaunchScreen.storyboard */; };
+		0F59B66D2CE28B820030DFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6602CE28B820030DFF4 /* Assets.xcassets */; };
+		0F59B66E2CE28B820030DFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6652CE28B820030DFF4 /* Main.storyboard */; };
 		0FFAB7FF2CDFAC1C00AD77A6 /* HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; };
 		26735978D3249E007AA88BA9 /* Pods_HellotextSDK_HellotextSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */; };
 		92AC3432A7296CD2B1FB55D7 /* Pods_HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740060D555D402049D977B99 /* Pods_HellotextSDK.framework */; };
@@ -26,6 +32,14 @@
 		0F59B5F02CE289B90030DFF4 /* HellotextSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellotextSDK.h; sourceTree = "<group>"; };
 		0F59B5F12CE289B90030DFF4 /* HellotextSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = HellotextSDK.docc; sourceTree = "<group>"; };
 		0F59B5F32CE289B90030DFF4 /* HellotextSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellotextSDKTests.swift; sourceTree = "<group>"; };
+		0F59B62E2CE28B680030DFF4 /* HellotextSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HellotextSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F59B65F2CE28B820030DFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F59B6602CE28B820030DFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F59B6612CE28B820030DFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F59B6622CE28B820030DFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F59B6642CE28B820030DFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F59B6662CE28B820030DFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0F59B6672CE28B820030DFF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HellotextSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotextSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412B95AF3885887047499B9B /* Pods-HellotextSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellotextSDK.release.xcconfig"; path = "Target Support Files/Pods-HellotextSDK/Pods-HellotextSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0F59B62B2CE28B680030DFF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FFAB7F12CDFAC1B00AD77A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,9 +95,24 @@
 			path = HellotextSDKTests;
 			sourceTree = "<group>";
 		};
+		0F59B6682CE28B820030DFF4 /* HellotextSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0F59B65F2CE28B820030DFF4 /* AppDelegate.swift */,
+				0F59B6602CE28B820030DFF4 /* Assets.xcassets */,
+				0F59B6612CE28B820030DFF4 /* Info.plist */,
+				0F59B6632CE28B820030DFF4 /* LaunchScreen.storyboard */,
+				0F59B6652CE28B820030DFF4 /* Main.storyboard */,
+				0F59B6662CE28B820030DFF4 /* SceneDelegate.swift */,
+				0F59B6672CE28B820030DFF4 /* ViewController.swift */,
+			);
+			path = HellotextSampleApp;
+			sourceTree = "<group>";
+		};
 		0FFAB7EA2CDFAC1B00AD77A6 = {
 			isa = PBXGroup;
 			children = (
+				0F59B6682CE28B820030DFF4 /* HellotextSampleApp */,
 				0F59B5F22CE289B90030DFF4 /* HellotextSDK */,
 				0F59B5F42CE289B90030DFF4 /* HellotextSDKTests */,
 				0FFAB7F52CDFAC1B00AD77A6 /* Products */,
@@ -90,6 +126,7 @@
 			children = (
 				0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */,
 				0FFAB7FE2CDFAC1C00AD77A6 /* HellotextSDKTests.xctest */,
+				0F59B62E2CE28B680030DFF4 /* HellotextSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +139,6 @@
 				600CDD060A440ED2BF946DD7 /* Pods-HellotextSDK-HellotextSDKTests.debug.xcconfig */,
 				4DD274C6CCADAC944DDBEF6E /* Pods-HellotextSDK-HellotextSDKTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +164,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0F59B62D2CE28B680030DFF4 /* HellotextSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F59B65C2CE28B690030DFF4 /* Build configuration list for PBXNativeTarget "HellotextSampleApp" */;
+			buildPhases = (
+				0F59B62A2CE28B680030DFF4 /* Sources */,
+				0F59B62B2CE28B680030DFF4 /* Frameworks */,
+				0F59B62C2CE28B680030DFF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HellotextSampleApp;
+			packageProductDependencies = (
+			);
+			productName = HellotextSampleApp;
+			productReference = 0F59B62E2CE28B680030DFF4 /* HellotextSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0FFAB7F32CDFAC1B00AD77A6 /* HellotextSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FFAB8072CDFAC1C00AD77A6 /* Build configuration list for PBXNativeTarget "HellotextSDK" */;
@@ -176,6 +231,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					0F59B62D2CE28B680030DFF4 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					0FFAB7F32CDFAC1B00AD77A6 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -185,6 +243,7 @@
 				};
 			};
 			buildConfigurationList = 0FFAB7EE2CDFAC1B00AD77A6 /* Build configuration list for PBXProject "HellotextSDK" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -199,11 +258,22 @@
 			targets = (
 				0FFAB7F32CDFAC1B00AD77A6 /* HellotextSDK */,
 				0FFAB7FD2CDFAC1B00AD77A6 /* HellotextSDKTests */,
+				0F59B62D2CE28B680030DFF4 /* HellotextSampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F59B62C2CE28B680030DFF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F59B66C2CE28B820030DFF4 /* LaunchScreen.storyboard in Resources */,
+				0F59B66D2CE28B820030DFF4 /* Assets.xcassets in Resources */,
+				0F59B66E2CE28B820030DFF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FFAB7F22CDFAC1B00AD77A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +338,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F59B62A2CE28B680030DFF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F59B6692CE28B820030DFF4 /* ViewController.swift in Sources */,
+				0F59B66A2CE28B820030DFF4 /* SceneDelegate.swift in Sources */,
+				0F59B66B2CE28B820030DFF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FFAB7F02CDFAC1B00AD77A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +372,82 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0F59B6632CE28B820030DFF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F59B6622CE28B820030DFF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0F59B6652CE28B820030DFF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F59B6642CE28B820030DFF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0F59B6552CE28B690030DFF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6M46H75M84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HellotextSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Viva.HellotextSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F59B6562CE28B690030DFF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6M46H75M84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HellotextSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Viva.HellotextSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0FFAB8082CDFAC1C00AD77A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C320300513D3F04559070699 /* Pods-HellotextSDK.debug.xcconfig */;
@@ -523,6 +678,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F59B65C2CE28B690030DFF4 /* Build configuration list for PBXNativeTarget "HellotextSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F59B6552CE28B690030DFF4 /* Debug */,
+				0F59B6562CE28B690030DFF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0FFAB7EE2CDFAC1B00AD77A6 /* Build configuration list for PBXProject "HellotextSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
