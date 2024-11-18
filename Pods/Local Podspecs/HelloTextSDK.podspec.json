@@ -17,8 +17,8 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "Sources/**/*.{h,m,swift}",
-  "public_header_files": "Sources/**/*.h",
+  "source_files": "Resources/**/*.{h,m,swift}",
+  "public_header_files": "Resources/**/*.h",
   "swift_versions": "5.0",
   "swift_version": "5.0"
 }

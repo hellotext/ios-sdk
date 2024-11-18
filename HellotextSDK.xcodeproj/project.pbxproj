@@ -13,6 +13,8 @@
 		0F59B66C2CE28B820030DFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6632CE28B820030DFF4 /* LaunchScreen.storyboard */; };
 		0F59B66D2CE28B820030DFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6602CE28B820030DFF4 /* Assets.xcassets */; };
 		0F59B66E2CE28B820030DFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F59B6652CE28B820030DFF4 /* Main.storyboard */; };
+		0F99BD052CE6944200E4F851 /* HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; };
+		0F99BD062CE6944200E4F851 /* HellotextSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FFAB7FF2CDFAC1C00AD77A6 /* HellotextSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFAB7F42CDFAC1B00AD77A6 /* HellotextSDK.framework */; };
 		26735978D3249E007AA88BA9 /* Pods_HellotextSDK_HellotextSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDF8BF94A8B0C49FC238718 /* Pods_HellotextSDK_HellotextSDKTests.framework */; };
 		7527E5BCF534DF869BAD8D7F /* Pods_HellotextSDK_HellotextSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24F3194122452F6A8FA6BB /* Pods_HellotextSDK_HellotextSampleApp.framework */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0F99BD072CE6944200E4F851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FFAB7EB2CDFAC1B00AD77A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFAB7F32CDFAC1B00AD77A6;
+			remoteInfo = HellotextSDK;
+		};
 		0FFAB8002CDFAC1C00AD77A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FFAB7EB2CDFAC1B00AD77A6 /* Project object */;
@@ -28,6 +37,20 @@
 			remoteInfo = HellotextSDK;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F99BD092CE6944200E4F851 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F99BD062CE6944200E4F851 /* HellotextSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F59B5F02CE289B90030DFF4 /* HellotextSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HellotextSDK.h; sourceTree = "<group>"; };
@@ -61,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7527E5BCF534DF869BAD8D7F /* Pods_HellotextSDK_HellotextSampleApp.framework in Frameworks */,
+				0F99BD052CE6944200E4F851 /* HellotextSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,10 +206,12 @@
 				0F59B62A2CE28B680030DFF4 /* Sources */,
 				0F59B62B2CE28B680030DFF4 /* Frameworks */,
 				0F59B62C2CE28B680030DFF4 /* Resources */,
+				0F99BD092CE6944200E4F851 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0F99BD082CE6944200E4F851 /* PBXTargetDependency */,
 			);
 			name = HellotextSampleApp;
 			productName = HellotextSampleApp;
@@ -396,6 +422,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0F99BD082CE6944200E4F851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FFAB7F32CDFAC1B00AD77A6 /* HellotextSDK */;
+			targetProxy = 0F99BD072CE6944200E4F851 /* PBXContainerItemProxy */;
+		};
 		0FFAB8012CDFAC1C00AD77A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0FFAB7F32CDFAC1B00AD77A6 /* HellotextSDK */;
