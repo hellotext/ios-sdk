@@ -1,0 +1,6 @@
+framework module Hellotext {
+  umbrella header "Hellotext-umbrella.h"
+
+  export *
+  module * { export * }
+}

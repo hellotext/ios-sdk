@@ -1,0 +1,22 @@
+{
+  "name": "Hellotext",
+  "version": "0.1.0",
+  "summary": "A short description of Hellotext.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Breno Morais/Hellotext",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Breno Morais": "brenomorais88@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Breno Morais/Hellotext.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source_files": "Hellotext/Classes/**/*"
+}

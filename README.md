@@ -1,22 +1,29 @@
-# HelloText iOS SDK
+# Hellotext
 
-HelloTextSDK é um SDK para iOS que permite a integração com o serviço HelloText.
+[![CI Status](https://img.shields.io/travis/Breno Morais/Hellotext.svg?style=flat)](https://travis-ci.org/Breno Morais/Hellotext)
+[![Version](https://img.shields.io/cocoapods/v/Hellotext.svg?style=flat)](https://cocoapods.org/pods/Hellotext)
+[![License](https://img.shields.io/cocoapods/l/Hellotext.svg?style=flat)](https://cocoapods.org/pods/Hellotext)
+[![Platform](https://img.shields.io/cocoapods/p/Hellotext.svg?style=flat)](https://cocoapods.org/pods/Hellotext)
 
-## Instalação
+## Example
 
-### CocoaPods
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Para instalar HelloTextSDK usando CocoaPods, adicione a seguinte linha ao seu `Podfile`:
+## Requirements
+
+## Installation
+
+Hellotext is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'HelloTextSDK', :git => 'https://github.com/hellotext/ios-sdk.git'
+pod 'Hellotext'
+```
 
+## Author
 
+Breno Morais, brenomorais88@gmail.com
 
-### Swift Package Manager (SPM)
+## License
 
-Para instalar HelloTextSDK usando Swift Package Manager, adicione o seguinte a seu arquivo Package.swift:
-
-dependencies: [
-    .package(url: "https://github.com/hellotext/ios-sdk.git", from: "1.0.0")
-]
+Hellotext is available under the MIT license. See the LICENSE file for more info.

@@ -1,0 +1,16 @@
+PODS:
+  - Hellotext (0.1.0)
+
+DEPENDENCIES:
+  - Hellotext (from `../`)
+
+EXTERNAL SOURCES:
+  Hellotext:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hellotext: 48715c823afc2e94cd88710624e78df7401eb1f9
+
+PODFILE CHECKSUM: e1ab3e2a8396cd8201d340a3f9fa0f88262d9045
+
+COCOAPODS: 1.15.2

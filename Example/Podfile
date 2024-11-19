@@ -1,0 +1,11 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'Hellotext_Example' do
+  pod 'Hellotext', :path => '../'
+
+  target 'Hellotext_Tests' do
+    inherit! :search_paths
+  end
+end
