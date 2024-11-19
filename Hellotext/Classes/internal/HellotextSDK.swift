@@ -16,8 +16,6 @@ class HellotextCore {
     }
 
     func trackEvent(event: String) {
-        self.service.newSession() { response in
-            print(response)
-        }
+        self.service.trackEvent(action: "", appParameters: [:])
     }
 }

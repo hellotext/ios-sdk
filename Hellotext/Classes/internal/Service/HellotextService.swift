@@ -10,6 +10,7 @@ import Foundation
 
 enum HellotextURL: String {
     case session = "https://api.hellotext.com/v1/track/sessions"
+    case event = "https://api.hellotext.com/v1/track/events"
 }
 
 struct TrackSessionResponse: Codable {
@@ -17,12 +18,10 @@ struct TrackSessionResponse: Codable {
 }
 
 protocol HellotextServiceProtocol {
-    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void)
+//    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void)
 
-    func trackEvent(session: String,
-                    action: String,
-                    appParameters: [String: Any],
-                    completion: @escaping (Result<Data, Error>) -> Void)
+    func trackEvent(action: String,
+                    appParameters: [String: Any])
 }
 
 class HellotextService: HellotextServiceProtocol {
@@ -35,7 +34,7 @@ class HellotextService: HellotextServiceProtocol {
     func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void) {
 
         guard let url = URL(string: HellotextURL.session.rawValue) else {
-            HellotextDebug.debugError("Invalid URL")
+            HellotextDebug.debugError("Invalid Session URL")
             return
         }
 
@@ -70,44 +69,75 @@ class HellotextService: HellotextServiceProtocol {
     }
 
     func getSession(completion: @escaping (Result<String, Error>) -> Void) {
-        newSession { result in
-            
-            
+        // verificar se já tem uma sessão
 
+        newSession { result in
+            switch result {
+            case .failure(let error):
+                print("Error: \(error)")
+                completion(.failure(error))
+
+            case .success(let response):
+                guard let sessionID = response.id else {
+                    return
+                }
+
+                completion(.success(sessionID))
+            }
         }
     }
 
-    func trackEvent(session: String,
-                    action: String,
-                    appParameters: [String: Any],
-                    completion: @escaping (Result<Data, Error>) -> Void) {
+    private func trackEvent(session: String) {
 
-//        let url = URL(string: "https://api.hellotext.com/v1/track/events")!
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//
-//        let body: [String: Any] = [
-//            "session": session,
-//            "action": action,
-//            "app_parameters": appParameters
-//        ]
-//
-//        do {
-//            request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
-//        } catch {
-//            completion(.failure(error))
-//            return
-//        }
-//
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//            if let error = error {
-//                completion(.failure(error))
-//            } else if let data = data {
-//                completion(.success(data))
-//            }
-//        }
-//
-//        task.resume()
+        guard let url = URL(string: HellotextURL.event.rawValue) else {
+            HellotextDebug.debugError("Invalid Event URL")
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let body: [String: Any] = [
+            "session": session,
+            "action": "tesste",
+            "app_parameters": [:]
+        ]
+
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
+        } catch {
+            print(error)
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print(error)
+            } else if let data = data {
+                print(data)
+                print(response)
+                print(error)
+            }
+        }
+
+        task.resume()
+
+    }
+
+    //MARK: - Public Methods
+
+    func trackEvent(action: String,
+                    appParameters: [String: Any]) {
+
+        self.getSession { result in
+            switch result {
+            case .failure(let error):
+                print("Error: \(error)")
+
+            case .success(let sessionID):
+                self.trackEvent(session: sessionID)
+            }
+        }
     }
 }
