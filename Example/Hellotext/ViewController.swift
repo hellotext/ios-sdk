@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        hellotext.sayHello()
         hellotext.track(event: "teste")
     }
 
