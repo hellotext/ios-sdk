@@ -1,6 +1,15 @@
+//
+//  Hellotext.swift
+//  Pods
+//
+//  Created by Breno Morais on 19/11/24.
+//
+
 public class Hellotext {
 
     public static let shared = Hellotext()
+
+    private var core: HellotextCore?
 
     private var clientID: String = ""
 
@@ -8,14 +17,11 @@ public class Hellotext {
 
     public func setup(clientID: String) {
         self.clientID = clientID
-    }
-
-    internal func getClientID() -> String {
-        return clientID
+        self.core = HellotextCore(clientID: clientID)
     }
 
     public func track(event: String) {
-        print("Tracking event: \(event)")
+        self.core?.trackEvent(event: event)
     }
 
 }

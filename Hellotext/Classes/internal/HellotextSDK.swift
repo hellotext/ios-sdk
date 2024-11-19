@@ -7,11 +7,17 @@
 //
 
 class HellotextCore {
-    let service: HellotextServiceProtocol = HellotextService()
+    let service: HellotextServiceProtocol
+    let clientID: String
 
-    init() {}
+    init(clientID: String) {
+        self.service = HellotextService(clientID: clientID)
+        self.clientID = clientID
+    }
 
     func trackEvent(event: String) {
-        print(event)
+        self.service.trackSession() { response in
+            print(response)
+        }
     }
 }

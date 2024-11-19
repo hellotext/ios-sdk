@@ -8,11 +8,11 @@
 class HellotextDebug {
 
     static func debugError(_ error: String) {
-        print(error)
+        htPrint(error)
         // tratar erro
     }
 
-    static func print(_ message: String) {
+    static func htPrint(_ message: String) {
         print(message)
         // tratar erro
     }
