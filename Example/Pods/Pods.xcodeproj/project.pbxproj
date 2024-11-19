@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F2EC8662CECFEF3008D474F /* HTTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */; };
+		0F2EC8682CED002C008D474F /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2EC8672CED002B008D474F /* SessionResponse.swift */; };
 		15EBE6DE777DF010E1C194F81971BA87 /* HTDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416018D2532A6A719E1CCEF2C2A08B0 /* HTDebug.swift */; };
 		2822FF89150803E1E9D7F2BA5C6EE673 /* Hellotext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5054CDDC41C25997B32541B6EF522F /* Hellotext.swift */; };
 		2DC9281FEA60350A56DF428E59ABC347 /* HTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F9A3A892FFD867E58332A6AE75C89A /* HTService.swift */; };
@@ -46,6 +47,7 @@
 		09E3305F6A6CDE6725B30602F939542A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0EE123916A8CDC44DC1C17390321074C /* Pods-Hellotext_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hellotext_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTokenManager.swift; sourceTree = "<group>"; };
+		0F2EC8672CED002B008D474F /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		0F5054CDDC41C25997B32541B6EF522F /* Hellotext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hellotext.swift; path = Hellotext/Classes/Hellotext.swift; sourceTree = "<group>"; };
 		11A5F4CE562A803E679D8600152BD62A /* Pods-Hellotext_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hellotext_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		23A2239585CBBCC156EB9494F28E56E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		43B5A91D7F1AE504867B713400121628 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0F2EC8672CED002B008D474F /* SessionResponse.swift */,
 				E7F9A3A892FFD867E58332A6AE75C89A /* HTService.swift */,
 			);
 			path = Service;
@@ -410,6 +413,7 @@
 				2822FF89150803E1E9D7F2BA5C6EE673 /* Hellotext.swift in Sources */,
 				DD01D36B77BC04878B68344C93060C22 /* Hellotext-dummy.m in Sources */,
 				40547E71B5956D073153CB06425CB2D3 /* HTConstants.swift in Sources */,
+				0F2EC8682CED002C008D474F /* SessionResponse.swift in Sources */,
 				15EBE6DE777DF010E1C194F81971BA87 /* HTDebug.swift in Sources */,
 				683F86933D140711CE9B4B830868B279 /* HTSDK.swift in Sources */,
 				2DC9281FEA60350A56DF428E59ABC347 /* HTService.swift in Sources */,

@@ -15,7 +15,14 @@ public class Hellotext {
 
     private init() {}
 
-    public func setup(clientID: String) {
+    public func setup(clientID: String,
+                      session: String? = nil,
+                      appName: String? = nil) {
+
+        if let session = session {
+            TokenManager.shared.saveSessionToken(session)
+        }
+
         self.clientID = clientID
         self.core = HellotextCore(clientID: clientID)
     }

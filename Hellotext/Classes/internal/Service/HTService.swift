@@ -8,18 +8,7 @@
 
 import Foundation
 
-enum HellotextURL: String {
-    case session = "https://api.hellotext.com/v1/track/sessions"
-    case event = "https://api.hellotext.com/v1/track/events"
-}
-
-struct TrackSessionResponse: Codable {
-    let id: String?
-}
-
 protocol HellotextServiceProtocol {
-//    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void)
-
     func trackEvent(action: String,
                     appParameters: [String: Any])
 }
@@ -31,7 +20,7 @@ class HellotextService: HellotextServiceProtocol {
         self.clientID = clientID
     }
 
-    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void) {
+    func newSession(completion: @escaping (Result<SessionResponse, Error>) -> Void) {
 
         guard let url = URL(string: HellotextURL.session.rawValue) else {
             HellotextDebug.debugError("Invalid Session URL")
@@ -57,7 +46,7 @@ class HellotextService: HellotextServiceProtocol {
                 completion(.failure(error))
             } else if let data = data {
                 do {
-                    let decodedResponse = try JSONDecoder().decode(TrackSessionResponse.self, from: data)
+                    let decodedResponse = try JSONDecoder().decode(SessionResponse.self, from: data)
                     completion(.success(decodedResponse))
                     TokenManager.shared.saveSessionToken(decodedResponse.id ?? "")
                 } catch {
