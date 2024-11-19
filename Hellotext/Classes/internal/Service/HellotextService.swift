@@ -17,7 +17,7 @@ struct TrackSessionResponse: Codable {
 }
 
 protocol HellotextServiceProtocol {
-    func trackSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void)
+    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void)
 
     func trackEvent(session: String,
                     action: String,
@@ -32,7 +32,7 @@ class HellotextService: HellotextServiceProtocol {
         self.clientID = clientID
     }
 
-    func trackSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void) {
+    func newSession(completion: @escaping (Result<TrackSessionResponse, Error>) -> Void) {
 
         guard let url = URL(string: HellotextURL.session.rawValue) else {
             HellotextDebug.debugError("Invalid URL")
@@ -67,6 +67,14 @@ class HellotextService: HellotextServiceProtocol {
         }
 
         task.resume()
+    }
+
+    func getSession(completion: @escaping (Result<String, Error>) -> Void) {
+        newSession { result in
+            
+            
+
+        }
     }
 
     func trackEvent(session: String,
