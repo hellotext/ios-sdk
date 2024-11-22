@@ -6,7 +6,7 @@
 //  Copyright (c) 2024 Breno Morais. All rights reserved.
 //
 
-class HellotextCore {
+class HTCore {
     let service: HellotextServiceProtocol
     let clientID: String
 

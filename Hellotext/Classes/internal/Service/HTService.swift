@@ -22,8 +22,8 @@ class HellotextService: HellotextServiceProtocol {
 
     func newSession(completion: @escaping (Result<SessionResponse, Error>) -> Void) {
 
-        guard let url = URL(string: HellotextURL.session.rawValue) else {
-            HellotextDebug.debugError("Invalid Session URL")
+        guard let url = URL(string: HTConstants.session.rawValue) else {
+            HTDebug.debugError("Invalid Session URL")
             return
         }
 
@@ -48,7 +48,7 @@ class HellotextService: HellotextServiceProtocol {
                 do {
                     let decodedResponse = try JSONDecoder().decode(SessionResponse.self, from: data)
                     completion(.success(decodedResponse))
-                    TokenManager.shared.saveSessionToken(decodedResponse.id ?? "")
+                    HTTokenManager.shared.saveSessionToken(decodedResponse.id ?? "")
                 } catch {
                     completion(.failure(error))
                 }
@@ -59,7 +59,7 @@ class HellotextService: HellotextServiceProtocol {
     }
 
     func getSession(completion: @escaping (Result<String, Error>) -> Void) {
-        if let session = TokenManager.shared.getSessionToken() {
+        if let session = HTTokenManager.shared.getSessionToken() {
             completion(.success(session))
             return
         }
@@ -82,8 +82,8 @@ class HellotextService: HellotextServiceProtocol {
 
     private func trackEvent(session: String) {
 
-        guard let url = URL(string: HellotextURL.event.rawValue) else {
-            HellotextDebug.debugError("Invalid Event URL")
+        guard let url = URL(string: HTConstants.event.rawValue) else {
+            HTDebug.debugError("Invalid Event URL")
             return
         }
 

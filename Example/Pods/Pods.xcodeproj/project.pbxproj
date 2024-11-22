@@ -15,7 +15,7 @@
 		3C1687965DC5F841F7D7C343E6338395 /* Pods-Hellotext_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CDAD030B98028522B7BFD9D3007075 /* Pods-Hellotext_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40547E71B5956D073153CB06425CB2D3 /* HTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0EBEAFA03E530CA33E6C3066AB984 /* HTConstants.swift */; };
 		477EA02D281A1207751D8C13E7AC5EAA /* Pods-Hellotext_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F530C6A79666C9E16ABD4748DDD02FEE /* Pods-Hellotext_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		683F86933D140711CE9B4B830868B279 /* HTSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTSDK.swift */; };
+		683F86933D140711CE9B4B830868B279 /* HTCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTCore.swift */; };
 		840DFBE7826082097278B1484B451D0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		980C028C29C85BE998845192AF79A15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D9FA02D9BD8F306EA97BEADFBEB354E6 /* Hellotext-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 097FF2A1C52DB2694C9AAF4B7D82CB86 /* Hellotext-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,7 +76,7 @@
 		EF3757C923B61E4E3E2E844E65B321B7 /* Hellotext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hellotext.debug.xcconfig; sourceTree = "<group>"; };
 		F14C7A23A6D84A322AFA05966CD33213 /* Pods_Hellotext_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hellotext_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30E230C1BC883B2344DE99590361A31 /* Pods-Hellotext_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hellotext_Example.modulemap"; sourceTree = "<group>"; };
-		F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTSDK.swift; sourceTree = "<group>"; };
+		F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTCore.swift; sourceTree = "<group>"; };
 		F530C6A79666C9E16ABD4748DDD02FEE /* Pods-Hellotext_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hellotext_Example-umbrella.h"; sourceTree = "<group>"; };
 		F5D0EBEAFA03E530CA33E6C3066AB984 /* HTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTConstants.swift; sourceTree = "<group>"; };
 		F8CDAD030B98028522B7BFD9D3007075 /* Pods-Hellotext_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hellotext_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */,
 				F5D0EBEAFA03E530CA33E6C3066AB984 /* HTConstants.swift */,
 				B416018D2532A6A719E1CCEF2C2A08B0 /* HTDebug.swift */,
-				F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTSDK.swift */,
+				F4C2A1014CE0E52400A77CC6FCD8AB35 /* HTCore.swift */,
 				43B5A91D7F1AE504867B713400121628 /* Service */,
 			);
 			name = internal;
@@ -415,7 +415,7 @@
 				40547E71B5956D073153CB06425CB2D3 /* HTConstants.swift in Sources */,
 				0F2EC8682CED002C008D474F /* SessionResponse.swift in Sources */,
 				15EBE6DE777DF010E1C194F81971BA87 /* HTDebug.swift in Sources */,
-				683F86933D140711CE9B4B830868B279 /* HTSDK.swift in Sources */,
+				683F86933D140711CE9B4B830868B279 /* HTCore.swift in Sources */,
 				2DC9281FEA60350A56DF428E59ABC347 /* HTService.swift in Sources */,
 				0F2EC8662CECFEF3008D474F /* HTTokenManager.swift in Sources */,
 			);

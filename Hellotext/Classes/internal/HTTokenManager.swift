@@ -8,10 +8,10 @@
 import Security
 import Foundation
 
-class TokenManager {
+class HTTokenManager {
     private let sessionTokenKey = "sessionToken"
 
-    static let shared = TokenManager()
+    static let shared = HTTokenManager()
 
     private init() {
         // inicialization empty

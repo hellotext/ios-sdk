@@ -5,7 +5,7 @@
 //  Created by Breno Morais on 19/11/24.
 //
 
-class HellotextDebug {
+class HTDebug {
 
     static func debugError(_ error: String) {
         htPrint(error)

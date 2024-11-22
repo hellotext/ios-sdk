@@ -9,7 +9,7 @@ public class Hellotext {
 
     public static let shared = Hellotext()
 
-    private var core: HellotextCore?
+    private var core: HTCore?
 
     private var clientID: String = ""
 
@@ -20,11 +20,11 @@ public class Hellotext {
                       appName: String? = nil) {
 
         if let session = session {
-            TokenManager.shared.saveSessionToken(session)
+            HTTokenManager.shared.saveSessionToken(session)
         }
 
         self.clientID = clientID
-        self.core = HellotextCore(clientID: clientID)
+        self.core = HTCore(clientID: clientID)
     }
 
     public func track(event: String) {
