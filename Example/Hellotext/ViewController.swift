@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let actionName = "app.installed"
+        let actionName = "manual-event"
         let params: [String: Any] = [
-            "name": "Hellotext"
+            "name": "manual-event-config"
         ]
 
         hellotext.track(action: actionName, appParameters: params)

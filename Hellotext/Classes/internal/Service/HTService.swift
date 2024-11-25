@@ -81,7 +81,6 @@ class HellotextService: HellotextServiceProtocol {
     }
 
     private func trackEvent(session: String, action: String, params: [String: Any]) {
-
         guard let url = URL(string: HTConstants.event.rawValue) else {
             HTDebug.debugError("Invalid Event URL")
             return
@@ -98,6 +97,8 @@ class HellotextService: HellotextServiceProtocol {
         ]
 
         body["device"] = loadDeviceInfo()
+
+        print(body)
 
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
@@ -117,7 +118,6 @@ class HellotextService: HellotextServiceProtocol {
         }
 
         task.resume()
-
     }
 
     private func loadDeviceInfo() -> [String: Any] {

@@ -18,8 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        Hellotext.shared.setup(clientID: "XRlYbGzx")
-        
+
+        let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
+        ?? Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
+        ?? ""
+
+        Hellotext.shared.setup(clientID: "XRlYbGzx", appName: appName)
+
         return true
     }
 
