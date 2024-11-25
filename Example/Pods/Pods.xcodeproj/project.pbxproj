@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F164A5B2CF4E1F800141E59 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F164A5A2CF4E1F100141E59 /* UIDevice+extension.swift */; };
 		0F2EC8662CECFEF3008D474F /* HTTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */; };
 		0F2EC8682CED002C008D474F /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2EC8672CED002B008D474F /* SessionResponse.swift */; };
 		15EBE6DE777DF010E1C194F81971BA87 /* HTDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416018D2532A6A719E1CCEF2C2A08B0 /* HTDebug.swift */; };
@@ -46,6 +47,7 @@
 		097FF2A1C52DB2694C9AAF4B7D82CB86 /* Hellotext-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hellotext-umbrella.h"; sourceTree = "<group>"; };
 		09E3305F6A6CDE6725B30602F939542A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0EE123916A8CDC44DC1C17390321074C /* Pods-Hellotext_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hellotext_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0F164A5A2CF4E1F100141E59 /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTokenManager.swift; sourceTree = "<group>"; };
 		0F2EC8672CED002B008D474F /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		0F5054CDDC41C25997B32541B6EF522F /* Hellotext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hellotext.swift; path = Hellotext/Classes/Hellotext.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F164A592CF4E1E900141E59 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F164A5A2CF4E1F100141E59 /* UIDevice+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1F96B623DC9CBFF6B765B8DB7FD8608B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +214,7 @@
 		B5EED20BDCE40479D54929D84E50F2DA /* internal */ = {
 			isa = PBXGroup;
 			children = (
+				0F164A592CF4E1E900141E59 /* Extension */,
 				0F2EC8652CECFEF3008D474F /* HTTokenManager.swift */,
 				F5D0EBEAFA03E530CA33E6C3066AB984 /* HTConstants.swift */,
 				B416018D2532A6A719E1CCEF2C2A08B0 /* HTDebug.swift */,
@@ -417,6 +428,7 @@
 				15EBE6DE777DF010E1C194F81971BA87 /* HTDebug.swift in Sources */,
 				683F86933D140711CE9B4B830868B279 /* HTCore.swift in Sources */,
 				2DC9281FEA60350A56DF428E59ABC347 /* HTService.swift in Sources */,
+				0F164A5B2CF4E1F800141E59 /* UIDevice+extension.swift in Sources */,
 				0F2EC8662CECFEF3008D474F /* HTTokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

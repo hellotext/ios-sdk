@@ -15,7 +15,7 @@ class HTCore {
         self.clientID = clientID
     }
 
-    func trackEvent(event: String) {
-        self.service.trackEvent(action: "", appParameters: [:])
+    func trackEvent(action: String, appParameters: [String: Any]) {
+        self.service.trackEvent(action: action, appParameters: appParameters)
     }
 }

@@ -80,7 +80,7 @@ class HellotextService: HellotextServiceProtocol {
         }
     }
 
-    private func trackEvent(session: String) {
+    private func trackEvent(session: String, action: String, params: [String: Any]) {
 
         guard let url = URL(string: HTConstants.event.rawValue) else {
             HTDebug.debugError("Invalid Event URL")
@@ -91,11 +91,13 @@ class HellotextService: HellotextServiceProtocol {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let body: [String: Any] = [
+        var body: [String: Any] = [
             "session": session,
-            "action": "tesste",
-            "app_parameters": [:]
+            "action": action,
+            "app_parameters": params
         ]
+
+        body["device"] = loadDeviceInfo()
 
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
@@ -118,6 +120,18 @@ class HellotextService: HellotextServiceProtocol {
 
     }
 
+    private func loadDeviceInfo() -> [String: Any] {
+        let modelName = UIDevice.modelName
+        let osVersion = UIDevice.current.systemVersion
+
+        return [
+            "os":"iOS",
+            "brand":"Apple",
+            "model": modelName,
+            "version": osVersion
+        ]
+    }
+
     //MARK: - Public Methods
 
     func trackEvent(action: String,
@@ -130,7 +144,10 @@ class HellotextService: HellotextServiceProtocol {
 
             case .success(let sessionID):
                 print("Sessão: \(sessionID)")
-                self.trackEvent(session: sessionID)
+
+                self.trackEvent(session: sessionID,
+                                action: action,
+                                params: appParameters)
             }
         }
     }

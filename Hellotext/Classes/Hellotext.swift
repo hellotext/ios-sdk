@@ -27,8 +27,8 @@ public class Hellotext {
         self.core = HTCore(clientID: clientID)
     }
 
-    public func track(event: String) {
-        self.core?.trackEvent(event: event)
+    public func track(action: String, appParameters: [String: Any]) {
+        self.core?.trackEvent(action: action, appParameters: appParameters)
     }
 
 }

@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        hellotext.track(event: "teste")
+        let actionName = "app.installed"
+        let params: [String: Any] = [
+            "name": "Hellotext"
+        ]
+
+        hellotext.track(action: actionName, appParameters: params)
     }
 
     override func didReceiveMemoryWarning() {
