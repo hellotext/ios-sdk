@@ -89,6 +89,7 @@ class HellotextService: HellotextServiceProtocol {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(clientID)", forHTTPHeaderField: "Authorization")
 
         var body: [String: Any] = [
             "session": session,
@@ -98,8 +99,8 @@ class HellotextService: HellotextServiceProtocol {
 
         body["device"] = loadDeviceInfo()
 
-        print(body)
-
+        HTDebug.sendingEvent(event: body)
+        
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
         } catch {
@@ -109,11 +110,25 @@ class HellotextService: HellotextServiceProtocol {
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                print(error)
-            } else if let data = data {
-                print(data)
-                print(response)
-                print(error)
+                HTDebug.sendingEventError(event: body, error: error)
+
+            } else if let httpResponse = response as? HTTPURLResponse {
+                let statusCode = httpResponse.statusCode
+
+                if let data = data {
+                    HTDebug.sendingEventSuccess(event: body)
+
+                    if let responseString = String(data: data, encoding: .utf8) {
+                        HTDebug.htPrint("Response \(statusCode) Body: \(responseString)")
+
+                    } else {
+                        HTDebug.htPrint("Response \(statusCode) Body: Unable to convert data to String")
+                    }
+                } else {
+                    HTDebug.htPrint("\(statusCode) No data received.")
+                }
+            } else {
+                HTDebug.htPrint("Invalid response or no response received.")
             }
         }
 
