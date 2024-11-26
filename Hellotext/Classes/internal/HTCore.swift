@@ -9,9 +9,9 @@
 class HTCore {
     let service: HellotextServiceProtocol
     let clientID: String
-    let appName: String
+    let appName: String?
 
-    init(clientID: String, appName: String) {
+    init(clientID: String, appName: String? = nil) {
         self.service = HellotextService(clientID: clientID)
         self.clientID = clientID
         self.appName = appName
@@ -27,13 +27,21 @@ class HTCore {
             HTDefaults.shared.setTrackedFirstConfig()
 
             let params = [
-                "name": self.appName
+                "name": self.getAppName()
             ]
 
             self.trackEvent(
                 action: "app.installed",
                 appParameters: params
             )
+        }
+    }
+
+    private func getAppName() -> String {
+        if let appName {
+            return appName
+        } else {
+            return Bundle.main.bundleIdentifier ?? ""
         }
     }
 }

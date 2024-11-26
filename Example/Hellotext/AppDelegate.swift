@@ -23,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ?? Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
         ?? ""
 
-        Hellotext.shared.setup(clientID: "XRlYbGzx", appName: appName)
+        Hellotext.shared.setup(clientID: "XRlYbGzx",
+                               session: "L4wa270gDpWxVBbjeqDBMj8Q6y5mE39R",
+                               appName: appName)
 
         return true
     }

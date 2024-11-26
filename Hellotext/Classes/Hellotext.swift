@@ -8,29 +8,23 @@
 public class Hellotext {
 
     public static let shared = Hellotext()
-
     private var core: HTCore?
-
-    private var clientID: String = ""
-    private var appName: String = ""
 
     private init() {}
 
     public func setup(clientID: String,
                       session: String? = nil,
-                      appName: String) {
+                      appName: String? = nil,
+                      enableDebugMode: Bool? = false) {
 
         if let session = session {
             HTTokenManager.shared.saveSessionToken(session)
         }
 
-        self.clientID = clientID
-        self.appName = appName
         self.core = HTCore(clientID: clientID, appName: appName)
     }
 
     public func track(action: String, appParameters: [String: Any]) {
         self.core?.trackEvent(action: action, appParameters: appParameters)
     }
-
 }
