@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F164A5D2CF77DC300141E59 /* HTPurchasesListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F164A5C2CF77DB500141E59 /* HTPurchasesListener.swift */; };
 		17D1E24DB39FA694F3E2DE1190838827 /* HTCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A74A4D289D03D30B208479C2F980EC /* HTCore.swift */; };
 		29F3C4DD127F7373947735FF9CA83A67 /* HTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18574AA57A19DC00F15E2E7E2B112B /* HTConstants.swift */; };
 		3C1687965DC5F841F7D7C343E6338395 /* Pods-Hellotext_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CDAD030B98028522B7BFD9D3007075 /* Pods-Hellotext_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,10 +47,11 @@
 
 /* Begin PBXFileReference section */
 		0EE123916A8CDC44DC1C17390321074C /* Pods-Hellotext_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hellotext_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0F164A5C2CF77DB500141E59 /* HTPurchasesListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTPurchasesListener.swift; sourceTree = "<group>"; };
 		0FCAA1BAEC79863A4A5E77028EA9A944 /* HTTokenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTokenManager.swift; sourceTree = "<group>"; };
-		114FF670CC09BF1C886576754BD7382F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		114FF670CC09BF1C886576754BD7382F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		11A5F4CE562A803E679D8600152BD62A /* Pods-Hellotext_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hellotext_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		251B8D0EE34C466398AEE27D6F3CB614 /* Hellotext.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Hellotext.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		251B8D0EE34C466398AEE27D6F3CB614 /* Hellotext.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Hellotext.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		276991A1A0F672AC5E653368C3269C2B /* Pods-Hellotext_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hellotext_Tests-dummy.m"; sourceTree = "<group>"; };
 		2A920623263B90E49E5808A31075E9E1 /* UIDevice+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		2C75B720DCF19F84EAAED8B35A4B5860 /* Pods-Hellotext_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hellotext_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,29 +59,29 @@
 		3320AA2662D8EC3375AB28C261BCB1AE /* Hellotext.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hellotext.modulemap; sourceTree = "<group>"; };
 		3B102E8E7E1E2DBD55F906EFE877AA93 /* Pods-Hellotext_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hellotext_Example-dummy.m"; sourceTree = "<group>"; };
 		3E42DACDC22E79F544FF932036511316 /* Pods-Hellotext_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hellotext_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FB6568A6FF6A3FFCA1E44135CA58430 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3FB6568A6FF6A3FFCA1E44135CA58430 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		434E7D9280C86D285AE4308E8EC5EA98 /* Hellotext-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hellotext-umbrella.h"; sourceTree = "<group>"; };
 		44ABD9F578DC6E9BF2764168D5F1479C /* Pods-Hellotext_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hellotext_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		49DAAD9DDD6EBBC3CDECF28AF812EFD8 /* Hellotext-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hellotext-dummy.m"; sourceTree = "<group>"; };
 		49EADD5FC56B8060EF53293A810C1C2A /* Hellotext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hellotext.swift; path = Hellotext/Classes/Hellotext.swift; sourceTree = "<group>"; };
 		54EED801E8AA7AC1EF2A726811CC7368 /* SessionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
-		722FF297BCB6AB431B89D093CEB52FE6 /* Pods-Hellotext_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hellotext_Example"; path = Pods_Hellotext_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		722FF297BCB6AB431B89D093CEB52FE6 /* Pods_Hellotext_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hellotext_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E7A4CB247586EBD538673F5300C7B5 /* HTDebug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTDebug.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F9077EAFD1550E6B4A4866B4FAFF21E /* Pods-Hellotext_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hellotext_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8115F8A1FD8F498A7E4C36D1A79E3991 /* Pods-Hellotext_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hellotext_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		821A3DBB45085784D299A22787F99971 /* Hellotext */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hellotext; path = Hellotext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		821A3DBB45085784D299A22787F99971 /* Hellotext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hellotext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8962CFAD47CB6E55F57BC49DCB935041 /* Hellotext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hellotext.release.xcconfig; sourceTree = "<group>"; };
 		8A3AD5169C6D1E4226E1624D6F707082 /* Pods-Hellotext_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hellotext_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9BC43FF26739EE85F0A17DE17EBF7B03 /* Hellotext-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hellotext-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B016256C6A31111FB64F162A522264F5 /* HTService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTService.swift; sourceTree = "<group>"; };
 		B7D3C78CCCAC8D989F1A50ADF1ACCB52 /* Hellotext-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hellotext-Info.plist"; sourceTree = "<group>"; };
 		CA8DFFB20146428074AE7D52C4BB5A5F /* HTDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTDefaults.swift; sourceTree = "<group>"; };
 		CF5DC411FF175C7CF24F440D772C944C /* Pods-Hellotext_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hellotext_Tests-Info.plist"; sourceTree = "<group>"; };
 		D6A74A4D289D03D30B208479C2F980EC /* HTCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTCore.swift; sourceTree = "<group>"; };
 		EC2A818FCA557D569C79E102867418FB /* Pods-Hellotext_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hellotext_Example-Info.plist"; sourceTree = "<group>"; };
-		F14C7A23A6D84A322AFA05966CD33213 /* Pods-Hellotext_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hellotext_Tests"; path = Pods_Hellotext_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14C7A23A6D84A322AFA05966CD33213 /* Pods_Hellotext_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hellotext_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30E230C1BC883B2344DE99590361A31 /* Pods-Hellotext_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hellotext_Example.modulemap"; sourceTree = "<group>"; };
 		F530C6A79666C9E16ABD4748DDD02FEE /* Pods-Hellotext_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hellotext_Example-umbrella.h"; sourceTree = "<group>"; };
 		F8CDAD030B98028522B7BFD9D3007075 /* Pods-Hellotext_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hellotext_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -119,9 +121,9 @@
 		1F96B623DC9CBFF6B765B8DB7FD8608B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				821A3DBB45085784D299A22787F99971 /* Hellotext */,
-				722FF297BCB6AB431B89D093CEB52FE6 /* Pods-Hellotext_Example */,
-				F14C7A23A6D84A322AFA05966CD33213 /* Pods-Hellotext_Tests */,
+				821A3DBB45085784D299A22787F99971 /* Hellotext.framework */,
+				722FF297BCB6AB431B89D093CEB52FE6 /* Pods_Hellotext_Example.framework */,
+				F14C7A23A6D84A322AFA05966CD33213 /* Pods_Hellotext_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +134,6 @@
 				B016256C6A31111FB64F162A522264F5 /* HTService.swift */,
 				54EED801E8AA7AC1EF2A726811CC7368 /* SessionResponse.swift */,
 			);
-			name = Service;
 			path = Service;
 			sourceTree = "<group>";
 		};
@@ -211,13 +212,13 @@
 			children = (
 				2A920623263B90E49E5808A31075E9E1 /* UIDevice+extension.swift */,
 			);
-			name = Extension;
 			path = Extension;
 			sourceTree = "<group>";
 		};
 		BB3A9B92329EDD5B7A273795E05FF2B6 /* internal */ = {
 			isa = PBXGroup;
 			children = (
+				0F164A5C2CF77DB500141E59 /* HTPurchasesListener.swift */,
 				FB18574AA57A19DC00F15E2E7E2B112B /* HTConstants.swift */,
 				D6A74A4D289D03D30B208479C2F980EC /* HTCore.swift */,
 				72E7A4CB247586EBD538673F5300C7B5 /* HTDebug.swift */,
@@ -320,7 +321,7 @@
 			);
 			name = "Pods-Hellotext_Example";
 			productName = Pods_Hellotext_Example;
-			productReference = 722FF297BCB6AB431B89D093CEB52FE6 /* Pods-Hellotext_Example */;
+			productReference = 722FF297BCB6AB431B89D093CEB52FE6 /* Pods_Hellotext_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		460C0E2A0C7A330483840343451F6F23 /* Pods-Hellotext_Tests */ = {
@@ -339,7 +340,7 @@
 			);
 			name = "Pods-Hellotext_Tests";
 			productName = Pods_Hellotext_Tests;
-			productReference = F14C7A23A6D84A322AFA05966CD33213 /* Pods-Hellotext_Tests */;
+			productReference = F14C7A23A6D84A322AFA05966CD33213 /* Pods_Hellotext_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		58453FDE388684E79C4D61ACFCA718E8 /* Hellotext */ = {
@@ -357,7 +358,7 @@
 			);
 			name = Hellotext;
 			productName = Hellotext;
-			productReference = 821A3DBB45085784D299A22787F99971 /* Hellotext */;
+			productReference = 821A3DBB45085784D299A22787F99971 /* Hellotext.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -378,7 +379,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 1F96B623DC9CBFF6B765B8DB7FD8608B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -428,6 +428,7 @@
 				5773A07324FBB7F0BE2EE91E187A84A3 /* HTService.swift in Sources */,
 				B3B3EF8CA68902EC534C661E4ED7B44E /* HTTokenManager.swift in Sources */,
 				59C4A142D5492C1DF47AA93754B239C9 /* SessionResponse.swift in Sources */,
+				0F164A5D2CF77DC300141E59 /* HTPurchasesListener.swift in Sources */,
 				55824B94DDF584418697B147BCB9CE14 /* UIDevice+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,8 +721,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
