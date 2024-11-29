@@ -18,7 +18,7 @@ public class Hellotext {
                       enableDebugMode: Bool? = false) {
 
         if let session = session {
-            HTTokenManager.shared.saveSessionToken(session)
+            HTDefaults.shared.setSession(session: session)
         }
 
         self.core = HTCore(clientID: clientID, appName: appName)

@@ -48,7 +48,7 @@ class HellotextService: HellotextServiceProtocol {
                 do {
                     let decodedResponse = try JSONDecoder().decode(SessionResponse.self, from: data)
                     completion(.success(decodedResponse))
-                    HTTokenManager.shared.saveSessionToken(decodedResponse.id ?? "")
+                    HTDefaults.shared.setSession(session: decodedResponse.id ?? "")
                 } catch {
                     completion(.failure(error))
                 }
@@ -59,7 +59,7 @@ class HellotextService: HellotextServiceProtocol {
     }
 
     func getSession(completion: @escaping (Result<String, Error>) -> Void) {
-        if let session = HTTokenManager.shared.getSessionToken() {
+        if let session = HTDefaults.shared.getSession(), !session.isEmpty {
             completion(.success(session))
             return
         }
