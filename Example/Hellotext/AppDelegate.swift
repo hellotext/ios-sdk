@@ -56,7 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-
 extension AppDelegate: HellotextDelegate {
     func didTrackHellotextEvent(event: String) {
         print(event)
