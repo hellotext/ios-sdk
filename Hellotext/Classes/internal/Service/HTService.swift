@@ -15,9 +15,11 @@ protocol HellotextServiceProtocol {
 
 class HellotextService: HellotextServiceProtocol {
     let clientID: String
+    let delegate: HellotextDelegate?
 
-    init(clientID: String) {
+    init(clientID: String, delegate: HellotextDelegate?) {
         self.clientID = clientID
+        self.delegate = delegate
     }
 
     func newSession(completion: @escaping (Result<SessionResponse, Error>) -> Void) {
@@ -156,8 +158,10 @@ class HellotextService: HellotextServiceProtocol {
             switch result {
             case .failure(let error):
                 print("Error: \(error)")
+                self.delegate?.didFailedTrackHellotextEvent(error: "HellotextSDK track Error: \(error)")
 
             case .success(let sessionID):
+                self.delegate?.didTrackHellotextEvent(event: "HellotextSDK track event success: \(action)")
                 print("Sessão: \(sessionID)")
 
                 self.trackEvent(session: sessionID,

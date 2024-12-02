@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Hellotext.shared.setup(clientID: "XRlYbGzx",
                                session: "L4wa270gDpWxVBbjeqDBMj8Q6y5mE39R",
-                               appName: appName)
+                               appName: appName,
+                               delegate: self)
 
         return true
     }
@@ -53,5 +54,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+
+extension AppDelegate: HellotextDelegate {
+    func didTrackHellotextEvent(event: String) {
+        print(event)
+    }
+    
+    func didFailedTrackHellotextEvent(error: String) {
+        print(error)
+    }
 }
 

@@ -12,13 +12,15 @@ class HTCore {
     let service: HellotextServiceProtocol
     let clientID: String
     let appName: String?
+    let delegate: HellotextDelegate?
 
     private var purchasesManager: HTPurchasesManager?
 
-    init(clientID: String, appName: String? = nil) {
-        self.service = HellotextService(clientID: clientID)
+    init(clientID: String, appName: String? = nil, delegate: HellotextDelegate?) {
+        self.service = HellotextService(clientID: clientID, delegate: delegate)
         self.clientID = clientID
         self.appName = appName
+        self.delegate = delegate
         self.checkFirstInstallTrack()
         self.setupPurchasesListener()
     }
