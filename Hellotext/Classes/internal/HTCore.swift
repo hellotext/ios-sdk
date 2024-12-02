@@ -36,7 +36,7 @@ class HTCore {
             ]
 
             self.trackEvent(
-                action: "app.installed",
+                action: HTEvents.appInstalled.rawValue,
                 appParameters: params
             )
         }
@@ -62,7 +62,7 @@ extension HTCore: HTPurchasesManagerDelegate {
         ]
 
         self.trackEvent(
-            action: "app.purchase",
+            action: HTEvents.inAppPurchase.rawValue,
             appParameters: params
         )
     }

@@ -29,7 +29,7 @@ class HTPurchasesManager: NSObject, SKPaymentTransactionObserver {
 
     // Método para observar as transações
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        for transaction in transactions {
+         for transaction in transactions {
             HTDebug.htPrint("Status \(transaction.transactionState.rawValue): \(transaction.payment.productIdentifier)")
             self.delegate.updateTransaction(state: transaction.transactionState)
             SKPaymentQueue.default().finishTransaction(transaction)
