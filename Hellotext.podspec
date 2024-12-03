@@ -9,34 +9,17 @@
 Pod::Spec.new do |s|
   s.name             = 'Hellotext'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Hellotext.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Hellotext: An SDK for managing text communications in iOS.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Hellotext is an SDK designed to simplify the management of text communications within iOS applications.
                        DESC
 
-  s.homepage         = 'https://github.com/Breno Morais/Hellotext'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/hellotext/ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Breno Morais' => 'brenomorais88@gmail.com' }
-  s.source           = { :git => 'https://github.com/hellotext/ios-sdk', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/hellotext/ios-sdk.git', :tag => s.version.to_s }
   s.ios.deployment_target = '15.0'
-
+  s.swift_versions = ['5.0']
   s.source_files = 'Hellotext/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Hellotext' => ['Hellotext/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
