@@ -12,5 +12,5 @@ enum HTConstants: String {
 
 enum HTEvents: String {
     case appInstalled = "app.installed"
-    case inAppPurchase = "app.purchase"
+    case inAppPurchase = "app.spent"
 }
