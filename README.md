@@ -1,5 +1,7 @@
 # Hellotext
 
+
+
 [![CI Status](https://img.shields.io/travis/Breno Morais/Hellotext.svg?style=flat)](https://travis-ci.org/Breno Morais/Hellotext)
 [![Version](https://img.shields.io/cocoapods/v/Hellotext.svg?style=flat)](https://cocoapods.org/pods/Hellotext)
 [![License](https://img.shields.io/cocoapods/l/Hellotext.svg?style=flat)](https://cocoapods.org/pods/Hellotext)
@@ -11,6 +13,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 13
+
 ## Installation
 
 Hellotext is available through [CocoaPods](https://cocoapods.org). To install
@@ -21,6 +25,7 @@ pod 'Hellotext'
 ```
 
 ## Usage
+
 Hellotext SDK will automatically track important events in your application.
 
 To manually trigger an event, use the following code:
