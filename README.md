@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod 'Hellotext'
 ```
 
+## Usage
+Hellotext SDK will automatically track important events in your application.
+
+To manually trigger an event, use the following code:
+```ruby
+Hellotext.shared.track(action: "Action", appParameters: ["Key": "Value"])
+```
+
 ## Author
 
 Breno Morais, brenomorais88@gmail.com
